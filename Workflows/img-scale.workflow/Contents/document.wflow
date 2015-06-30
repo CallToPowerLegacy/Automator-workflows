@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>381</string>
+	<string>409</string>
 	<key>AMApplicationVersion</key>
-	<string>2.4</string>
+	<string>2.5</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -162,7 +162,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>309.500000:761.000000</string>
+				<string>301.500000:158.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Ask for Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -260,9 +260,9 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>309.500000:606.000000</string>
+				<string>301.500000:263.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Choose from List.action/Contents/Resources/English.lproj/main.nib</string>
+				<string>/System/Library/Automator/Choose from List.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -380,7 +380,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>309.500000:501.000000</string>
+				<string>301.500000:366.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Copy Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -849,9 +849,9 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>309.500000:398.000000</string>
+				<string>301.500000:527.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Rename Finder Items.action/Contents/Resources/English.lproj/main.nib</string>
+				<string>/System/Library/Automator/Rename Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -909,7 +909,7 @@
 					<key>scaleValue</key>
 					<integer>0</integer>
 					<key>sizeValue</key>
-					<real>500</real>
+					<integer>1000</integer>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.ScaleImage</string>
@@ -1006,9 +1006,110 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>309.500000:179.000000</string>
+				<string>301.500000:632.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Scale Images.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<false/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.path</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.1.1</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Preview</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>imageType</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.path</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Change Type of Images.action</string>
+				<key>ActionName</key>
+				<string>Change Type of Images</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>imageType</key>
+					<string>JPEG</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.ChangeImageType</string>
+				<key>CFBundleVersion</key>
+				<string>1.1.1</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<true/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryPhotos</string>
+				</array>
+				<key>Class Name</key>
+				<string>AMChangeImageTypeAction</string>
+				<key>InputUUID</key>
+				<string>BE344BAC-125C-4856-9143-513E70B71F05</string>
+				<key>Keywords</key>
+				<array>
+					<string>Image</string>
+					<string>Photo</string>
+					<string>Change</string>
+					<string>Convert</string>
+					<string>Set</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>773A67A2-5D7C-4B7C-957E-8C5AEAFC425D</string>
+				<key>UUID</key>
+				<string>A0352903-C326-4730-9739-3A01E0B72E0A</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Preview</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>TIFF</string>
+						<key>name</key>
+						<string>imageType</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>301.500000:736.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Change Type of Images.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -1089,40 +1190,47 @@
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>37723D94-E225-4C73-A1EE-2E5CB0EF8AB7</key>
+		<key>194CD838-0177-4A3B-AFDA-A2E5F27E4401</key>
+		<dict>
+			<key>from</key>
+			<string>9CA027B4-7E3C-4AC5-8305-1270A953CFE4 - 9CA027B4-7E3C-4AC5-8305-1270A953CFE4</string>
+			<key>to</key>
+			<string>E7E1147A-1095-4BBE-9872-8F8C55658950 - E7E1147A-1095-4BBE-9872-8F8C55658950</string>
+		</dict>
+		<key>1FBE4425-39D2-4D37-8293-34769EEA87FE</key>
+		<dict>
+			<key>from</key>
+			<string>A0352903-C326-4730-9739-3A01E0B72E0A - A0352903-C326-4730-9739-3A01E0B72E0A</string>
+			<key>to</key>
+			<string>0DB41323-83FC-499E-B640-5BEFF0765768 - 0DB41323-83FC-499E-B640-5BEFF0765768</string>
+		</dict>
+		<key>2DF1FB4F-5DA8-4B6B-BEA9-BCEAF39028B5</key>
 		<dict>
 			<key>from</key>
 			<string>3ACA1D41-7E0D-4707-A5AC-0B66FF072C1A - 3ACA1D41-7E0D-4707-A5AC-0B66FF072C1A</string>
 			<key>to</key>
-			<string>0DB41323-83FC-499E-B640-5BEFF0765768 - 0DB41323-83FC-499E-B640-5BEFF0765768</string>
+			<string>A0352903-C326-4730-9739-3A01E0B72E0A - A0352903-C326-4730-9739-3A01E0B72E0A</string>
 		</dict>
-		<key>64329F45-569E-47F4-BC97-7A69D5D1182A</key>
+		<key>3152D151-EC71-421D-89ED-B64823ACB088</key>
+		<dict>
+			<key>from</key>
+			<string>3652EF41-D50D-4516-9076-82CD7A604A2A - 3652EF41-D50D-4516-9076-82CD7A604A2A</string>
+			<key>to</key>
+			<string>3ACA1D41-7E0D-4707-A5AC-0B66FF072C1A - 3ACA1D41-7E0D-4707-A5AC-0B66FF072C1A</string>
+		</dict>
+		<key>37B686EE-8237-4E8A-A0B4-E0A03327236D</key>
 		<dict>
 			<key>from</key>
 			<string>1EB8F82F-A202-43D9-A115-6DA0009550EB - 1EB8F82F-A202-43D9-A115-6DA0009550EB</string>
 			<key>to</key>
 			<string>9CA027B4-7E3C-4AC5-8305-1270A953CFE4 - 9CA027B4-7E3C-4AC5-8305-1270A953CFE4</string>
 		</dict>
-		<key>781A266E-E021-4603-B01D-525CBCFCCCA0</key>
+		<key>66C9C874-FD42-4C3E-A6A0-FB9E6ED65981</key>
 		<dict>
 			<key>from</key>
 			<string>E7E1147A-1095-4BBE-9872-8F8C55658950 - E7E1147A-1095-4BBE-9872-8F8C55658950</string>
 			<key>to</key>
 			<string>3652EF41-D50D-4516-9076-82CD7A604A2A - 3652EF41-D50D-4516-9076-82CD7A604A2A</string>
-		</dict>
-		<key>D70AA04C-070B-427C-8978-159F4965B6AB</key>
-		<dict>
-			<key>from</key>
-			<string>3652EF41-D50D-4516-9076-82CD7A604A2A - 3652EF41-D50D-4516-9076-82CD7A604A2A</string>
-			<key>to</key>
-			<string>3ACA1D41-7E0D-4707-A5AC-0B66FF072C1A - 3ACA1D41-7E0D-4707-A5AC-0B66FF072C1A</string>
-		</dict>
-		<key>E055BAEF-F4A8-4CC1-9DB9-3D4D23672DDA</key>
-		<dict>
-			<key>from</key>
-			<string>9CA027B4-7E3C-4AC5-8305-1270A953CFE4 - 9CA027B4-7E3C-4AC5-8305-1270A953CFE4</string>
-			<key>to</key>
-			<string>E7E1147A-1095-4BBE-9872-8F8C55658950 - E7E1147A-1095-4BBE-9872-8F8C55658950</string>
 		</dict>
 	</dict>
 	<key>state</key>
