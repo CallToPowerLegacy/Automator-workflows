@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>409</string>
+	<string>428</string>
 	<key>AMApplicationVersion</key>
-	<string>2.5</string>
+	<string>2.7</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -51,24 +51,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>tell application "System Events"
-	set volume input volume 0
-end tell
-tell application "System Preferences"
-	activate
-	set current pane to pane id "com.apple.preference.sound"
-end tell
-tell application "System Events"
-	tell process "System Preferences"
-		set frontmost to true
-		click radio button "input" of tab group 1 of window "Sound"
-		perform action "AXDecrement" of slider 1 of group 2 of tab group 1 of window "Sound"
-	end tell
-end tell
-tell application "System Preferences"
-	quit
-end tell
-</string>
+					<string>tell application "System Events"	set volume input volume 0end telltell application "System Preferences"	activate	set current pane to pane id "com.apple.preference.sound"end telltell application "System Events"	tell process "System Preferences"		set frontmost to true		click radio button "input" of tab group 1 of window "Sound"		perform action "AXDecrement" of slider 1 of group 2 of tab group 1 of window "Sound"	end tellend telltell application "System Preferences"	quitend tell</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunScript</string>
@@ -119,8 +102,6 @@ end run</string>
 						<string>0</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>

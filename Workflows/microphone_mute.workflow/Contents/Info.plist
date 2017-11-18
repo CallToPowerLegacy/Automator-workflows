@@ -3,6 +3,6 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleName</key>
-	<string>Mute_microphone</string>
+	<string>microphone_mute</string>
 </dict>
 </plist>
